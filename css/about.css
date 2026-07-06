@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #070b14;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* NAV */
+
+header {
+    background-color: #070b14;
+    border-bottom: 1px solid #1d3557;
+    padding: 0 40px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+header nav ul {
+    display: flex;
+    gap: 32px;
+    margin-left: auto;
+}
+
+header nav a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header nav a:hover {
+    color: #00b4d8;
+}
+
+header nav a.active {
+    color: #00b4d8;
+}
+
+/* BOTTOM NAV - hidden on desktop */
+
+.bottom-nav {
+    display: none;
+}
+
+/* PAGE INTRO */
+
+.page-intro {
+    padding: 60px 40px 40px;
+    border-bottom: 1px solid #1d3557;
+    margin-bottom: 48px;
+}
+
+.page-intro h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 10px;
+}
+
+.page-intro p {
+    font-size: 16px;
+    color: #64748b;
+}
+
+/* EDUCATION */
+
+.education {
+    padding: 0 40px 48px;
+}
+
+.education h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 16px;
+}
+
+.education p {
+    font-size: 15px;
+    color: #94a3b8;
+    max-width: 640px;
+    margin-bottom: 14px;
+}
+
+.education strong {
+    color: #00b4d8;
+    font-weight: 600;
+}
+
+/* ASPIRATIONS */
+
+.aspirations {
+    padding: 0 40px 48px;
+    border-top: 1px solid #1d3557;
+    padding-top: 48px;
+}
+
+.aspirations h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 16px;
+}
+
+.aspirations p {
+    font-size: 15px;
+    color: #94a3b8;
+    max-width: 640px;
+    margin-bottom: 14px;
+}
+
+.aspirations strong {
+    color: #00b4d8;
+    font-weight: 600;
+}
+
+/* SKILLS */
+
+.skills {
+    padding: 48px 40px;
+    border-top: 1px solid #1d3557;
+}
+
+.skills h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 24px;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.skill-group {
+    background-color: #0d1b2a;
+    border: 1px solid #1d3557;
+    border-radius: 10px;
+    padding: 20px;
+    min-width: 200px;
+    flex: 1;
+}
+
+.skill-group h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #00b4d8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+    font-family: monospace;
+}
+
+.skill-group ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-group li {
+    font-size: 14px;
+    color: #94a3b8;
+    padding-left: 14px;
+    position: relative;
+}
+
+.skill-group li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #00b4d8;
+    font-size: 11px;
+    top: 3px;
+}
+
+/* HOBBIES */
+
+.hobbies {
+    padding: 48px 40px;
+    border-top: 1px solid #1d3557;
+}
+
+.hobbies h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.hobbies ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hobbies li {
+    font-size: 15px;
+    color: #94a3b8;
+    padding-left: 18px;
+    position: relative;
+}
+
+.hobbies li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #00b4d8;
+    font-size: 11px;
+    top: 4px;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #1d3557;
+    padding: 24px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+footer p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0d1b2a;
+    border: 1px solid #1d3557;
+    transition: border-color 0.25s;
+}
+
+.social-links a:hover {
+    border-color: #00b4d8;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    header {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background-color: #0d1b2a;
+        border-top: 1px solid #1d3557;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 50;
+    }
+
+    .bottom-nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3px;
+        color: #64748b;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        flex: 1;
+        padding: 8px 0;
+    }
+
+    .bottom-nav a:hover,
+    .bottom-nav a.active {
+        color: #00b4d8;
+    }
+
+    .bottom-nav .nav-icon {
+        font-size: 20px;
+    }
+ 
+    body {
+        padding-bottom: 72px;
+    }
+
+    .page-intro {
+        padding: 40px 20px 30px;
+    }
+
+    .page-intro h1 {
+        font-size: 28px;
+    }
+
+    .skill-group{
+       margin-bottom: 15px;
+    }
+
+    .education,
+    .aspirations,
+    .skills,
+    .hobbies {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    footer {
+    border-top: 1px solid #1d3557;
+    padding: 24px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+footer p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #0d1b2a;
+    border: 1px solid #1d3557;
+    transition: border-color 0.25s;
+}
+
+.social-links a:hover {
+    border-color: #00b4d8;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+}
